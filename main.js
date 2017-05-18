@@ -63,7 +63,29 @@ $(document).ready(function() {
 
 
 
+    $('#container2 div div:nth-child(odd)').on('keyup', function() {
+        if ($(this).html() == 'אייסה' || $(this).html() == 'עלאא' || $(this).html() == 'עאהד') {
+            $(this).next().html('7242967');
 
+        } else if ($(this).html() == 'באדר' || $(this).html() == 'בדר') {
+            $(this).next().html('6080557');
+
+        } else if ($(this).html() == 'אמיר') {
+            $(this).next().html('3693300');
+
+        } else if ($(this).html() == 'עזם' || $(this).html() == 'חזאם') {
+            $(this).next().html('6429515');
+
+        } else if ($(this).html() == 'גוהאד') {
+            $(this).next().html('5262856');
+
+        } else if ($(this).html() == 'סלימאן' || $(this).html() == 'סולימאן') {
+            $(this).next().html('2137450');
+
+        } else {
+            $(this).next().html('');
+        }
+    });
 
 
 
