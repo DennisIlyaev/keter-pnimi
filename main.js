@@ -13,6 +13,12 @@ $(document).ready(function() {
 
     };
 
+    window.onbeforeunload = confirmExit;
+
+    function confirmExit() {
+        return "You have attempted to leave this page.  If you have made any changes to the fields without clicking the Save button, your changes will be lost.  Are you sure you want to exit this page?";
+    }
+
 
 
     $('#container3 div div:nth-child(2)', this).on('click', function() {
@@ -64,6 +70,7 @@ $(document).ready(function() {
 
 
     $('#container2 div div:nth-child(odd)').on('keyup', function() {
+
         if ($(this).html() == 'אייסה' || $(this).html() == 'עלאא' || $(this).html() == 'עאהד') {
             $(this).next().html('7242967');
 
