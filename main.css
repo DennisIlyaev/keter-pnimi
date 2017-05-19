@@ -120,10 +120,11 @@ ul {
 
 #container2 {
 	height: 101.5%;
-	width: 126.5px;
+	width: 142px;
 	position: absolute;
 	top: 235.5px;
 	border: 2px solid black;
+
 }
 
 #container2 div:nth-child(1) {
@@ -151,7 +152,7 @@ ul {
 	height: 100.5%;
 	position: absolute;
 	top: 240px;
-	left: 68px;
+	left: 53px;
 	font-weight: bold;
 }
 
